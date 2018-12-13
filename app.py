@@ -52,6 +52,11 @@ def split_title():
     return render_template('split_title.html',titles=titles)
 
 
+@app.route('/hmrc-notified')
+def hmrc_notified():
+    return render_template('hmrc_notified.html')
+
+
 # if main file is run then run this file
 if __name__ == '__main__':
     app.secret_key = "youwillneverknow"
